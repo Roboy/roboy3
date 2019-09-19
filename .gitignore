@@ -1,0 +1,6 @@
+.catkin_workspace
+cmake-build-debug/
+.idea
+devel/
+build/
+src/CMakeLists.txt
