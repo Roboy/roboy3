@@ -10,3 +10,15 @@
 [submodule "src/roboy_control_center"]
 	path = src/roboy_control_center
 	url = https://github.com/roboy/roboy_control_center
+[submodule "src/kindyn"]
+	path = src/kindyn
+	url = https://github.com/CARDSflow/kindyn
+[submodule "src/robots"]
+	path = src/robots
+	url = https://github.com/roboy/roboy3_models
+[submodule "src/cardsflow_rviz"]
+	path = src/cardsflow_rviz
+	url = https://github.com/CARDSflow/cardsflow_rviz
+[submodule "src/cardsflow_rqt"]
+	path = src/cardsflow_rqt
+	url = https://github.com/CARDSflow/cardsflow_rqt
