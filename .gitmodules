@@ -22,3 +22,9 @@
 [submodule "src/cardsflow_rqt"]
 	path = src/cardsflow_rqt
 	url = https://github.com/CARDSflow/cardsflow_rqt
+[submodule "src/pysdf"]
+	path = src/pysdf
+	url = https://github.com/Roboy/pysdf
+[submodule "src/ball_in_socket_estimator"]
+	path = src/ball_in_socket_estimator
+	url = https://github.com/Roboy/ball_in_socket_estimator
