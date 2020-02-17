@@ -1,7 +1,7 @@
 number_of_icebuses: 1
 number_of_myobuses: 0
 icebus_0:
-  number_of_motors: 8
+  number_of_motors: 1
   motor_ids: [0,1,2,3,4,5,6,7]
   motor_ids_global: [0,1,2,3,4,5,6,7]
   bus_ids: [128,129,130,131,132,133,134,135]
