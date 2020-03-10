@@ -29,3 +29,64 @@ git submodule init && git submodule update
 cd roboy3_ws
 catkin_make
 ```
+## Run
+```
+source roboy3_ws/devel/setup.bash
+roslaunch kindyn robot.launch robot_name:=right_arm simulated:=true
+rviz
+```
+In RViz:
+- add the CARDSflow panel in RViz
+- at the Displays Sidebar set Global Options > Fixed Frame to “world”
+- at the Displays Sidebar add the display types “rviz > Marker”, “rviz > InteractiveMarker” and “rviz > TF”
+- drag any red cube, the according endeffector should follow the cube (solves IK for the cube pose)
+
+```
+# list joint names
+rosparam get /joint_names
+
+# publish desired joint angles targets
+ rostopic pub /joint_targets sensor_msgs/JointState "header:
+  seq: 0
+  stamp: {secs: 0, nsecs: 0}
+  frame_id: ''
+name: ['head_axis0', 'head_axis1']
+position: [0.5, 0.2]
+velocity: [0,0]
+effort: [0,0]" 
+
+# get robot state
+rostopic echo /robot_state
+
+# execute IK for given position
+rosservice call /execute_ik "endeffector: 'hand_right'
+type: 1
+target_frame: 'torso'
+pose:
+  position:
+    x: -0.61
+    y: -0.04
+    z: 0.26
+  orientation:
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0"
+    
+# solve IK for a given position without applying joint angles
+rosservice call /ik "endeffector: 'hand_right'
+type: 1
+target_frame: 'torso'
+pose:
+  position:
+    x: -0.61
+    y: -0.04
+    z: 0.26
+  orientation:
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 0.0"
+```
+
+
