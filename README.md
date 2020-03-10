@@ -32,7 +32,7 @@ catkin_make
 ## Run
 ```
 source roboy3_ws/devel/setup.bash
-roslaunch kindyn robot.launch robot_name:=right_arm simulated:=true
+roslaunch kindyn robot.launch robot_name:=upper_body simulated:=true
 rviz
 ```
 In RViz:
