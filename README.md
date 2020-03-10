@@ -12,7 +12,7 @@ ros-$ROS_DISTRO-effort-controllers libxml++2.6-dev ros-$ROS_DISTRO-robot-localiz
 ros-$ROS_DISTRO-tf ros-$ROS_DISTRO-interactive-markers ros-$ROS_DISTRO-tf-conversions \
 ros-$ROS_DISTRO-robot-state-publisher
 ```
-- (iDynTree)[https://github.com/robotology/iDynTree/tree/b65ad9939152c89dc2f7dc484b6e8687882d6b34] commit b65ad99
+- [iDynTree](https://github.com/robotology/iDynTree/tree/b65ad9939152c89dc2f7dc484b6e8687882d6b34) commit b65ad99
 ```
 cd path/to/iDyntree
 mkdir build && cd build
