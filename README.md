@@ -25,12 +25,12 @@ sudo make install
 git clone --recursive https://github.com/Roboy/roboy3.git -b missxa
 cd roboy3/src
 git submodule init && git submodule update
-cd roboy3_ws
+cd roboy3
 catkin_make
 ```
 ## Run
 ```
-source roboy3_ws/devel/setup.bash
+source roboy3/devel/setup.bash
 roslaunch kindyn robot.launch robot_name:=upper_body simulated:=true
 rviz
 ```
