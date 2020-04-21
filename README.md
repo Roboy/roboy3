@@ -21,10 +21,9 @@ make -j9
 sudo make install
 ```
 ## Build
-```mkdir roboy3_ws
-cd roboy3_ws
+```
 git clone --recursive https://github.com/Roboy/roboy3.git -b missxa
-cd src
+cd roboy3/src
 git submodule init && git submodule update
 cd roboy3_ws
 catkin_make
