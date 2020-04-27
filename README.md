@@ -20,6 +20,13 @@ cmake ..
 make -j9
 sudo make install
 ```
+- [qpOASES](https://github.com/robotology-dependencies/qpOASES/tree/ae5ddcb40e756b86a11ec16b91eb6a7d8eefe2e5) commit ae5ddcb
+```
+cd qpOASES/
+mkdir build && cd build
+cmake ../
+sudo make -j9 install
+```
 ## Build
 ```
 git clone --recursive https://github.com/Roboy/roboy3.git -b missxa
