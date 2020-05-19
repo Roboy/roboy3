@@ -1,67 +1,53 @@
-number_of_icebuses: 1
-number_of_myobuses: 0
-icebus_0:
-  number_of_motors: 10
-  motor_ids: [0,1,2,3,4,5,6,7,8,9]
-  motor_ids_global: [0,1,2,3,4,5,6,7,8,9]
-  bus_ids: [128,129,130,131,132,133,134,135,136,137]
-  muscle_type: ["myoBrick300","myoBrick300","myoBrick300","myoBrick300","myoBrick300","myoBrick300","myoBrick300","myoBrick300","myoBrick300","myoBrick300"]
-  coeffs_force2displacement:
-    - [0, 0, 0]
-    - [0, 0, 0]
-    - [0, 0, 0]
-    - [0, 0, 0]
-    - [0, 0, 0]
-    - [0, 0, 0]
-    - [0, 0, 0]
-    - [0, 0, 0]
-    - [0, 0, 0]
-    - [0, 0, 0]
-  coeffs_displacement2force:
-    - [0, 0, 0]
-    - [0, 0, 0]
-    - [0, 0, 0]
-    - [0, 0, 0]
-    - [0, 0, 0]
-    - [0, 0, 0]
-    - [0, 0, 0]
-    - [0, 0, 0]
-    - [0, 0, 0]
-    - [0, 0, 0]
-icebus_1:
-  number_of_motors: 1
-  motor_ids: [0]
-  motor_ids_global: [8]
-  bus_ids: [128]
-  muscle_type: ["myoBrick300"]
-  coeffs_force2displacement:
-    - [0, 0, 0]
-  coeffs_displacement2force:
-    - [0, 0, 0]
-myobus_0:
-  number_of_motors: 8
-  motor_ids: [0,1,2,3,4,5,6,7]
-  motor_ids_global: [0,1,2,3,4,5,6,7]
-  muscle_type: ["myoBrick300","myoBrick300","myoBrick300","myoBrick300","myoBrick300","myoBrick300","myoBrick300","myoBrick300"]
-  coeffs_force2displacement:
-    - [0, 0, 0]
-    - [0, 0, 0]
-    - [0, 0, 0]
-    - [0, 0, 0]
-    - [0, 0, 0]
-    - [0, 0, 0]
-    - [0, 0, 0]
-    - [0, 0, 0]
-  coeffs_displacement2force:
-    - [0, 0, 0]
-    - [0, 0, 0]
-    - [0, 0, 0]
-    - [0, 0, 0]
-    - [0, 0, 0]
-    - [0, 0, 0]
-    - [0, 0, 0]
-    - [0, 0, 0]
+icebus:
+  number_of_motors: [6,10]
+  update_frequency: [100,100]
+  motor_ids:
+    - [0,1,2,3,4,5]
+    - [0,1,2,3,4,5,6,7,8,9]
+  baudrate:
+    - [2000000,2000000,2000000,2000000,2000000,2000000]
+    - [460800,460800,460800,460800,460800,460800,19200,19200,19200,19200]
+  motor_ids_global:
+    - [0,1,2,3,4,5]
+    - [6,7,8,9,10,11,12,13,14,15]
+  bus_ids:
+    - [128,129,130,131,132,133]
+    - [128,129,130,131,132,133,134,135,136,137]
+  muscle_type:
+    - ["myoBrick","myoBrick","myoBrick","myoBrick","myoBrick","myoBrick"]
+    - ["m3","m3","m3","m3","m3","m3","openBionics","openBionics","openBionics","openBionics"]
+  encoder0_conversion_factor:
+    - [1,1,1,1,1,1]
+    - [1,1,1,1,1,1,1,1,1,1]
+  encoder1_conversion_factor:
+    - [1,1,1,1,1,1]
+    - [1,1,1,1,1,1,1,1,1,1]
+  coeffs_force2displacement: #not used yet
+    - [0,0,1]
+  coeffs_displacement2force: #not used yet
+    - [0,0,1]
+
+myobus:
+  number_of_motors: [16]
+  update_frequency: [100]
+  motor_ids:
+    - [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+  motor_ids_global:
+    - [16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]
+  bus_ids:
+    - [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+  muscle_type:
+    - ["myoMuscle","myoMuscle","myoMuscle","myoMuscle","myoMuscle","myoMuscle","myoMuscle","myoMuscle","myoMuscle","myoMuscle","myoMuscle","myoMuscle","myoMuscle","myoMuscle","myoMuscle","myoMuscle"]
+  encoder0_conversion_factor:
+    - [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+  encoder1_conversion_factor:
+    - [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+  coeffs_force2displacement: #not used yet
+    - [0,0,1]
+  coeffs_displacement2force: #not used yet
+    - [0,0,1]
+
 body_part:
   name: ["shoulder"]
   motor_ids_global:
-    - [0,1,2,3]
+    - [0]
