@@ -31,6 +31,3 @@
 [submodule "src/roboy_state_estimator"]
 	path = src/roboy_state_estimator
 	url = https://github.com/Roboy/roboy_state_estimator
-[submodule "src/roboy_darkroom"]
-	path = src/roboy_darkroom
-	url = https://github.com/Roboy/roboy_darkroom

@@ -1,0 +1,14 @@
+<library path="lib/libroboy_motor_calibration">
+  <class name="RoboyMotorCalibration" type="RoboyMotorCalibration" base_class_type="rqt_gui_cpp::Plugin">
+    <description>
+      Motor calibration plugin
+    </description>
+    <qtgui>
+      <group>
+        <label>Roboy</label>
+      </group>
+      <label>roboy motor calibration</label>
+      <statustip>Great user interface to provide real value.</statustip>
+    </qtgui>
+  </class>
+</library>
