@@ -34,3 +34,6 @@
 [submodule "src/idyntree"]
 	path = src/idyntree
 	url = https://github.com/robotology/idyntree.git
+[submodule "src/qpOASES"]
+	path = src/qpOASES
+	url = https://github.com/robotology-dependencies/qpOASES.git
