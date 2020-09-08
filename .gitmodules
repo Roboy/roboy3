@@ -31,3 +31,6 @@
 [submodule "src/roboy_state_estimator"]
 	path = src/roboy_state_estimator
 	url = https://github.com/Roboy/roboy_state_estimator
+[submodule "src/idyntree"]
+	path = src/idyntree
+	url = https://github.com/robotology/idyntree.git
