@@ -326,7 +326,7 @@ void RoboyMotorCalibration::estimateMyoMuscleSpringParameters() {
     float setpoint_max = ui.setpoint_max->text().toFloat(), setpoint_min = ui.setpoint_min->text().toFloat();
     int timeout = ui.timeout->text().toInt(), degree = ui.degree->text().toInt(), numberOfDataPoints = ui.data_points->text().toInt();
     roboy_middleware_msgs::MotorCommand msg;
-    msg.motor.push_back(ui.motor->value());
+    msg.global_id.push_back(ui.motor->value());
     ui.progressBar->show();
     ui.progressBar->setMaximum(0);
     ui.progressBar->setMinimum(0);
@@ -429,7 +429,7 @@ void RoboyMotorCalibration::estimateMyoBrickSpringParameters() {
     float setpoint_max = ui.setpoint_max->text().toFloat(), setpoint_min = ui.setpoint_min->text().toFloat();
     int timeout = ui.timeout->text().toInt(), degree = ui.degree->text().toInt(), numberOfDataPoints = ui.data_points->text().toInt();
     roboy_middleware_msgs::MotorCommand msg;
-    msg.motor.push_back(ui.motor->value());
+    msg.global_id.push_back(ui.motor->value());
 
     vector<double> x, y;
 
