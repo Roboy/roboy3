@@ -55,8 +55,8 @@ icebus:
     - [-1,-1,-1,-1,1,1,1,1,1,1]
     - [1,1,1,1,-1,-1,-1,-1,1,1]
     - [1,1,1,1,1,1,1,1,1,1,1,1]
-    - [1,1,1,1,1,1,1,1,1,1]
-    - [1,1,1,1,1,1,1,1,1,1]
+    - [1,-1,1,-1,1,-1,1,1,1,1]
+    - [1,-1,1,-1,1,-1,1,1,1,1]
   muscle_type:
     - ["myoBrick","myoBrick","myoBrick","myoBrick","myoBrick","myoBrick"]
     - ["myoBrick","myoBrick","myoBrick","myoBrick","myoBrick","myoBrick","myoBrick","myoBrick","myoBrick","myoBrick"]
