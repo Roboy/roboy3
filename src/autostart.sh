@@ -7,7 +7,8 @@ tmux new-session -s roboy -d \; \
   split-window -h \; \
   send-keys 'sleep 5; ik --wait' C-m\;\
   split-window -v \; \
-  send-keys 'sleep 2; roscd ball_in_socket_estimator/python && python3 predict.py --wait' C-m\;\
+  send-keys 'sleep 2; roscd ball_in_socket_estimator/python && 
+  ~/anaconda3/envs/roboy/bin/python3 predict.py --wait' C-m\;\
   # split-window -v \; \
   # send-keys 'sleep 45; /home/roboy/auto_initializing.sh' C-m\;\
 
