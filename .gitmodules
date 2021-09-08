@@ -37,3 +37,6 @@
 [submodule "src/qpOASES"]
 	path = src/qpOASES
 	url = https://github.com/robotology-dependencies/qpOASES.git
+[submodule "src/bulletroboy"]
+	path = src/bulletroboy
+	url = https://github.com/Roboy/bulletroboy
